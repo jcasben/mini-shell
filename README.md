@@ -24,10 +24,7 @@ Our mini shell has some self implemented methods, which are the following ones:
 
 - bg: reactivates an stopped process and leaves it in the background. Usage: bg \<job-number>
 
-You can launch commands in background using the following syntax:
-```bash
-<command> &
-```
+You can launch commands in background using the following syntax: `<command> &`
 
 This shell also can execute any other linux command thanks to the `execvp()` function, which creates a child process that executes this command while the parent waits it to finish. More information about this function [here](https://www.qnx.com/developers/docs/6.5.0SP1.update/com.qnx.doc.neutrino_lib_ref/e/execvp.html).
 
